@@ -4,82 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/style.css" rel="stylesheet"> 
-    <title>My Portfilio</title>
-  
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>HW-18</title>
 </head>
-
 <body>
-<!--background image span behind all of the content-->
-<div class="bcgimg" id="thebcgimg">
-    <div class="grid">
-
-        <div class="header">Header
-            <li class="logoimg"><img src="./LOGO/S LOGO MOD 17.png" alt="gold s logo" height="200px" width="200px"></li>
-            <ul class="headernavlist">
-                <li><a href="index.html">Home</li>
-                <li><a href="about.html" class="active">About Me</li>
-                <li><a href="about.html">Skills</li>
-                <li id="Contact"><a href="contact.html">Contact</li>
-            </ul>
+    <!--background img -->
+    <div class="bcgimg">
+        <div class="logo">
+            <img src="./LOGO/S LOGO MOD 17.png" alt="Sara's logo">
         </div>
-
-        <div class="aboutme">About Me
-            <h1 class="aboutmehp">
-                About Me
-            </h1>
-            <h2 class="myname">
-                Sara Stevens
-            </h2>
-            <p1 class="infoaboutme">
-                <!-- insert about me line-->
-            </p1>
-            <img src="./IMG/Myface.jpeg" alt="My Face" height="200px" width="200px">
+        <!-- <img src="" alt=" cream star background"> Removed this because you will be coding your background image in css. -->
+        <div id="bcgtext"> <!-- Your .bcgtext needs to live inside the .bcgimg element. -->
+            <h1>Hello, I'm Sara</h1> <!-- changing the content here because of a conflict with the about-me section. -->
+            <p>I am a creative minded person who loves to take creative ideas and turn them into a reality.</p> <!-- Changed to a p tag. No need for an h3 heading here --> 
         </div>
+    </div> <!-- end .bcgimg -->
+       
 
-        <div class="skills">Skills
-            <h1>A</h1>
-            <p>B</p>
-            <p>C</p>
-        </div>
+<!-- </div> <-- Remove this closing div element because it is not connected to an opening div tag. -->
 
-        <div class="explorepage">Explore Page
-            <h1 class="explore">
-            Explore Page App
-        </h1>
-        <li><a href="explore.html">Click Here</li>
-            <img src="./IMG/Explorepage.png" alt="Explore Page Cover Photo"height="200px" width="200px">
-        </div>
-
-        <div class="chillpill">Chill Pill
-             <h1 class="chill">
-                Chill Pill App
-            </h1>
-            <li><a href="chillpill.html">Click Here</li>
-                <img src="./IMG/Chillpill.png" alt= "Chill Pill Cover Photo"height="200px" width="200px">
-        </div>
-
-        <div class="agriculture">Agri-cCulture
-            <h1 class="govsite">
-            Goverment Site Redesign
-        </h1>
-        <li><a href="agriculture.html">Click Here</li>
-            <img src="./IMG/GovSite.png" alt="Goverment Site Redesign Argi-Culture Canada Cover Photo"height="200px" width="200px">
-        </div>
-
-        <div class="footer">Footer
-             <ul class="footernavlist">
-            <li><a href="index.html">Home</li>
-                <li><a href="about.html" class="active">About Me</li>
-                <li><a href="about.html">Skills</li>
-                <li id="Contact"><a href="contact.html">Contact</li>
+    <header>
+        <ul>
+            <!-- <li><img src="UX_UI_MOD_17/IMGS/S LOGO MOD 17.png" alt="logo"></li> I suggest moving your logo to above the h1 tag. --> 
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">About Me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li class="contact"> <!-- Changed ID to class because of a conflict with your contact section below. -->
+                <a class="button" href="#">Contact</a> <!-- Adding a button class so that you can make all buttons on the site look the same. -->
+            </li> 
         </ul>
-        </div>
-        
-
-
-    </div>
-
+    </header>
+    <section id="work">
+        <!-- This is where your grid-styled case studies will go. -->
+    </section>
+    <section id="about">
+        <!-- This is where your "About Me" link will take you to. -->
+    </section>
+    <section id="skills">
+        <!-- This is where your skills will go. -->
+    </section>
+    <section id="contact">
+        <!-- Contact information here. -->
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">Home</li>
+            <li><a href="#" class="active">About Me</li>
+            <li><a href="#">Skills</li>
+        </ul>
+    </footer>
 </body>
-
 </html>

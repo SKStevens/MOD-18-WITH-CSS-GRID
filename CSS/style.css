@@ -1,99 +1,155 @@
-* {
-  margin: 0;
-  padding: 0
-  ;
-}
+body
 
-.bcgimg
 {
-  background-color: rgb(220, 220, 220);
-  background-image: url(../IMG/bcg.png);  
+    background-color: rgb(255, 255, 255);
+    padding:0%;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+    /* overflow: hidden; */
+
 }
 
-
-/*
-
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "header header"
-  "aboutme aboutme" 
-  "skills skills"
-  "explorepage explorepage"
-  "chillpill chillpill"
-  "agriculture agriculture"
-  "footer footer";
-  grid-gap: 10px;
-}
-*/
-.header
+header
 {
- grid-area: header;
- display: grid;
+    background-color:white;
+    padding: 15px;
+    box-shadow: 0 0 3px black;
 }
 
-
-.aboutme
+header li
 {
-  grid-area: aboutme;
-  display: grid;
+   display: inline;
+   padding-left: 45px;
+   flex: auto;
+   
 }
 
-.skills
+header li a 
 {
-  grid-area: skills;
-  display: grid;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 13px;
+    transition: .5s ease;
+
 }
 
-.explorepage
+header li a:hover
 {
-  grid-area: explorepage;
-  
+    color: rgb(255, 195, 57);
+    text-decoration: italic;
+    padding: 13px;
+    
 }
 
-.chillpill
+/* Remove this selector and use the button class (.button) to make all your buttons on the site the same. */
+
+/* header ul .contact a 
 {
-  grid-area: chillpill;
-  display: grid;
+    color:black;
+    background:linear-gradient(45deg, gold, white );
+    border-radius: 20px;
+    float:inline;
+    position: relative;
+    top: 3px;
+    transition: .5s ease;
+    flex:auto;
+} */
+
+.button {
+    color:black;
+    background:linear-gradient(45deg, gold, white );
+    border-radius: 20px;
+    float:inline;
+    position: relative;
+    top: 3px;
+    transition: .5s ease;
+    padding: 10px;
 }
 
-
-.agriculture
+header ul .contact a:hover
 {
-  grid-area: agriculture;
-  display: grid;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, white, gold );
+    flex: auto;
 }
 
-.footer
+
+.active
 {
-  grid-area: footer;
-  display: grid;
+     color:  rgb(255, 195, 57);
+     text-decoration: underline;
+}
+
+/* header logo */
+.bcgimg .logo img
+{
+    width: 50px;
+    height: 80px; /* make sure your px is touching the numberic value, no spaces */
+}
+
+/* backgroung img*/
+/* .bcgimg img
+{
+    width: 100vw;
+    height: 99vh;
+} */
+
+.bcgtext #bcgtext
+{
+    position: absolute;
+    right: auto;
+    text-align: right;
+
+}
+.bcgtext #bcgtext h1
+{
+color: black;
+font-size: 50px;
+font-weight: 100;
+}
+
+.bcgtext #bcgtext h3
+{
+color: black;
+font-size: 30px;
+font-weight: 100;
 }
 
 
-.grid
-div:nth-child(even){
-  background-color: rgb(254, 131, 131);
+footer
+{
+    background-color:white;
+    padding: 15px;
+    box-shadow: 0 0 3px black;
 }
 
-.grid
-div:nth-child(odd){
-  background-color: rgb(148, 161, 255);
+footer li
+{
+   display: inline;
+   padding-left: 45px;
+   flex: auto;
+   
+}
+footer li a 
+{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 13px;
+    transition: .5s ease;
+
 }
 
-@media screen and (min-width: 736px) {
-  .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    ". header header ."
-    ". aboutme skills ."
-    ". explorepage explorepage ."
-    ". chillpill chillpill ."
-    ". agriculture agriculture ."
-    ". footer footer .";
-  }
-  
+footer li a:hover
+{
+    color: rgb(255, 195, 57);
+    text-decoration: italic;
+    padding: 13px;
+    
 }
 
+/* Edits from jonathan */
+
+.content {
+    height: 100vh;
+}
